@@ -5,6 +5,8 @@ body {
     // le layout est entièrement flexbox
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    background-color: rgb(255, 231, 186);
 }
 
 header {
@@ -16,3 +18,27 @@ header {
 
 }
 
+main {
+
+    display: grid;
+    grid-row-gap: 5px;
+    width: 100%;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+
+    div {
+
+        border: 1px solid black;
+
+        &:nth-child(-n+5) {
+
+            h2 {
+
+                text-align: center;
+
+            }
+
+        }
+
+    }
+
+}
