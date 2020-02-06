@@ -10,14 +10,26 @@
     background-color: $bkg_couleur;
 }
 
-div#libre_lundi {
+#libre_lundi,
+#libre_mardi,
+#libre_mercredi_1,
+#libre_mecredi_2 {
 
     @include style_case_libre();
 
 }
 
-div.projet {
+.projet,
+.cours_mardi,
+#cours_mercredi,
+#cours_mercredi_2 {
 
     @include style_case_cours();
+
+}
+
+#pause_mardi {
+
+    @include style_case_pause();
 
 }

@@ -6,7 +6,7 @@
     text-align: center;
     margin: 0 auto;
     grid-template-columns: repeat(5, 100px);
-    grid-template-rows: repeat(10, 50px);
+    grid-template-rows: repeat(11, 50px);
 
     div {
 
@@ -35,13 +35,13 @@
 
         &#libre_lundi {
 
-            grid-area: 2/1/5/1;
+            grid-area: 2/1/7/1;
 
         }
 
         &.lundi {
 
-            grid-area: 5/1/10/1;
+            grid-area: 7/1/12/1;
 
             p {
 
@@ -51,9 +51,39 @@
 
         }
 
-        &.mardi {
+        &#libre_mardi {
 
-            background-color: $couleur_libre;
+            grid-area: 2/2/6/2;
+
+        }
+
+        &#pause_mardi {
+
+            grid-area: 6/2/8/2;
+
+        }
+
+        &.cours_mardi {
+
+            grid-area: 8/2/12/2;
+
+        }
+
+        &#cours_mercredi {
+
+            grid-area: 5/3/6/3;
+
+        }
+
+        &#libre_mercredi_1 {
+
+            grid-area: 2/3/5/3;
+
+        }
+
+        &#libre_mecredi_2 {
+
+            grid-area: 6/3/7/3;
 
         }
 
