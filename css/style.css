@@ -51,20 +51,22 @@ header {
           align-items: center;
 }
 
-main {
+#horaire {
   display: -ms-grid;
   display: grid;
   grid-row-gap: 5px;
-  width: 100%;
+  grid-column-gap: 5px;
+  text-align: center;
   -ms-grid-columns: 100px 100px 100px 100px 100px;
       grid-template-columns: 100px 100px 100px 100px 100px;
 }
 
-main div {
+#horaire div {
   border: 1px solid black;
+  border-radius: 5px;
 }
 
-main div:nth-child(-n+5) h2 {
-  text-align: center;
+#horaire div.jour {
+  background-color: #ffc454;
 }
 /*# sourceMappingURL=style.css.map */

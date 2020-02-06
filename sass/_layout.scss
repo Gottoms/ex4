@@ -18,27 +18,27 @@ header {
 
 }
 
-main {
+#horaire {
 
     display: grid;
     grid-row-gap: 5px;
-    width: 100%;
+    grid-column-gap: 5px;
+    text-align: center;
     grid-template-columns: 100px 100px 100px 100px 100px;
 
     div {
 
         border: 1px solid black;
+        border-radius: 5px;
 
-        &:nth-child(-n+5) {
+        &.jour {
 
-            h2 {
-
-                text-align: center;
-
-            }
-
+            background-color: $couleur_jours;
+    
         }
 
     }
+
+    
 
 }
