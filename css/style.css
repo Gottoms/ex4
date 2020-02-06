@@ -57,8 +57,9 @@ header {
   grid-row-gap: 5px;
   grid-column-gap: 5px;
   text-align: center;
-  -ms-grid-columns: 100px 100px 100px 100px 100px;
-      grid-template-columns: 100px 100px 100px 100px 100px;
+  margin: 0 auto;
+  -ms-grid-columns: (100px)[5];
+      grid-template-columns: repeat(5, 100px);
 }
 
 #horaire div {
@@ -67,6 +68,20 @@ header {
 }
 
 #horaire div.jour {
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  opacity: 1;
   background-color: #ffc454;
+}
+
+#horaire div.jour:hover {
+  opacity: .7;
+}
+
+#horaire div.jour h2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 /*# sourceMappingURL=style.css.map */
