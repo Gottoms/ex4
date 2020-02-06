@@ -22,4 +22,21 @@
 /* ------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  width: 100%;
+  background-color: red;
+}
 /*# sourceMappingURL=style.css.map */
