@@ -1,6 +1,23 @@
-@mixin style_case_cours() {
+@mixin style_case_libre($bkg_couleur: $couleur_libre) {
+    background-color: $bkg_couleur;    
+}
 
-    border: 3px solid yellow;
-    
+@mixin style_case_cours($bkg_couleur: $couleur_cours) {
+    background-color: $bkg_couleur;
+}
+
+@mixin style_case_pause($bkg_couleur: $couleur_pause) {
+    background-color: $bkg_couleur;
+}
+
+div#libre_lundi {
+
+    @include style_case_libre();
+
+}
+
+div.projet {
+
+    @include style_case_cours();
 
 }

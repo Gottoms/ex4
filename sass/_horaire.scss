@@ -33,6 +33,30 @@
             }
         }
 
+        &#libre_lundi {
+
+            grid-area: 2/1/5/1;
+
+        }
+
+        &.lundi {
+
+            grid-area: 5/1/10/1;
+
+            p {
+
+                margin: 3px;
+
+            }
+
+        }
+
+        &.mardi {
+
+            background-color: $couleur_libre;
+
+        }
+
     }   
 
 }
