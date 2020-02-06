@@ -5,7 +5,7 @@
     grid-column-gap: 5px;
     text-align: center;
     margin: 0 auto;
-    grid-template-columns: repeat(5, 100px);
+    grid-template-columns: repeat(5, 90px);
     grid-template-rows: repeat(11, 50px);
 
     div {
@@ -87,6 +87,82 @@
 
         }
 
+        &#cours_mercredi_2 {
+
+            grid-area: 7/3/10/3;
+
+        }
+
+        &#libre_mercredi_3 {
+
+            grid-area: 10/3/12/3;
+
+        }
+
+        &#cours_jeudi_1 {
+
+            grid-area: 2/4/6/4;
+
+        }
+
+        &#pause_jeudi {
+
+            grid-area: 6/4/8/4;
+
+        }
+
+        &#cours_jeudi_2 {
+
+            grid-area: 8/4/12/4;
+
+        }
+
+        &#libre_vendredi_1 {
+
+            grid-area: 2/5/7/5;
+
+        }
+
+        &#cours_vendredi {
+
+            grid-area: 7/5/10/5;
+
+        }
+
+        &#libre_vendredi_2 {
+
+            grid-area: 10/5/12/5;
+
+        }
+
     }   
+
+}
+
+@media screen and (min-width: 768px) {
+
+    h1 {
+
+        font-size: 3em;
+
+    }
+
+    #horaire {
+
+        font-size: 1.1em;
+        grid-template-columns: repeat(5, 140px);
+
+    }
+
+}
+
+@media screen and(min-width: 1200px){
+
+    #horaire {
+
+        grid-template-columns: repeat(5, 200px);
+
+    }
+
 
 }

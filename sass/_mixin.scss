@@ -13,7 +13,10 @@
 #libre_lundi,
 #libre_mardi,
 #libre_mercredi_1,
-#libre_mecredi_2 {
+#libre_mecredi_2,
+#libre_mercredi_3,
+#libre_vendredi_1,
+#libre_vendredi_2 {
 
     @include style_case_libre();
 
@@ -22,13 +25,17 @@
 .projet,
 .cours_mardi,
 #cours_mercredi,
-#cours_mercredi_2 {
+#cours_mercredi_2,
+#cours_jeudi_1,
+#cours_jeudi_2,
+#cours_vendredi {
 
     @include style_case_cours();
 
 }
 
-#pause_mardi {
+#pause_mardi,
+#pause_jeudi {
 
     @include style_case_pause();
 

@@ -17,18 +17,25 @@
 #libre_lundi,
 #libre_mardi,
 #libre_mercredi_1,
-#libre_mecredi_2 {
+#libre_mecredi_2,
+#libre_mercredi_3,
+#libre_vendredi_1,
+#libre_vendredi_2 {
   background-color: #abff8f;
 }
 
 .projet,
 .cours_mardi,
 #cours_mercredi,
-#cours_mercredi_2 {
+#cours_mercredi_2,
+#cours_jeudi_1,
+#cours_jeudi_2,
+#cours_vendredi {
   background-color: #0388fc;
 }
 
-#pause_mardi {
+#pause_mardi,
+#pause_jeudi {
   background-color: #f08fff;
 }
 
@@ -96,8 +103,8 @@ h2 {
   grid-column-gap: 5px;
   text-align: center;
   margin: 0 auto;
-  -ms-grid-columns: (100px)[5];
-      grid-template-columns: repeat(5, 100px);
+  -ms-grid-columns: (90px)[5];
+      grid-template-columns: repeat(5, 90px);
   -ms-grid-rows: (50px)[11];
       grid-template-rows: repeat(11, 50px);
 }
@@ -184,5 +191,79 @@ h2 {
   -ms-grid-row-span: 1;
   -ms-grid-column: 3;
   grid-area: 6/3/7/3;
+}
+
+#horaire div#cours_mercredi_2 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: 7/3/10/3;
+}
+
+#horaire div#libre_mercredi_3 {
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: 10/3/12/3;
+}
+
+#horaire div#cours_jeudi_1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  grid-area: 2/4/6/4;
+}
+
+#horaire div#pause_jeudi {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: 6/4/8/4;
+}
+
+#horaire div#cours_jeudi_2 {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  grid-area: 8/4/12/4;
+}
+
+#horaire div#libre_vendredi_1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 5;
+  grid-area: 2/5/7/5;
+}
+
+#horaire div#cours_vendredi {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  grid-area: 7/5/10/5;
+}
+
+#horaire div#libre_vendredi_2 {
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 5;
+  grid-area: 10/5/12/5;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+  #horaire {
+    font-size: 1.1em;
+    -ms-grid-columns: (140px)[5];
+        grid-template-columns: repeat(5, 140px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #horaire {
+    -ms-grid-columns: (200px)[5];
+        grid-template-columns: repeat(5, 200px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
